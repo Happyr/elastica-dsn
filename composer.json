@@ -1,0 +1,29 @@
+{
+    "name": "happyr/elastica-dsn",
+    "description": "DSN support to ruflin/Elastica",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nyholm",
+            "email": "tobias.nyholm@gmail.com"
+        }
+    ],
+    "require": {
+        "ruflin/elastica": "^6.1"
+    },
+    "require-dev": {
+        "nyholm/nsa": "^1.1",
+        "phpunit/phpunit": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Happyr\\ElasticaDsn\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Happyr\\ElasticaDsn\\": "tests/"
+        }
+    }
+}
