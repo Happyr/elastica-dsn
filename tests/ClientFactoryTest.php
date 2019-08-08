@@ -22,10 +22,11 @@ class ClientFactoryTest extends TestCase
     public function getServers()
     {
         yield [['elasticsearch:localhost'], [], ['servers' => [['host' => 'localhost', 'port' => 9200]]]];
-        yield [['elasticsearch:example.com'], [], ['servers' => [['host' => 'example.com', 'port' => 9200]]]];
-        yield [['elasticsearch:localhost:1234'], [], ['servers' => [['host' => 'localhost', 'port' => 1234]]]];
+        yield [['elasticsearch://localhost'], [], ['servers' => [['host' => 'localhost', 'port' => 9200]]]];
+        yield [['elasticsearch://example.com'], [], ['servers' => [['host' => 'example.com', 'port' => 9200]]]];
+        yield [['elasticsearch://localhost:1234'], [], ['servers' => [['host' => 'localhost', 'port' => 1234]]]];
 
-        yield [['elasticsearch:foo:bar@localhost:1234'], [], [
+        yield [['elasticsearch://foo:bar@localhost:1234'], [], [
             'username' => 'foo',
             'password' => 'bar',
             'servers' => [['host' => 'localhost', 'port' => 1234]],
