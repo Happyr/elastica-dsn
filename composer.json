@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "ruflin/elastica": "^6.1"
+        "ruflin/elastica": "^6.1 || ^7.0"
     },
     "require-dev": {
         "nyholm/nsa": "^1.1",
