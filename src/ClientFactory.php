@@ -45,6 +45,7 @@ final class ClientFactory
 
     private static function doGetConfig(array $input, array $options): array
     {
+        $config = $options;
         $servers = [];
         $username = $options['username'] ?? null;
         $password = $options['password'] ?? null;
@@ -129,7 +130,7 @@ final class ClientFactory
             }
         }
 
-        $config = ['servers' => $servers];
+        $config['servers'] = $servers;
         if (null !== $username) {
             $config['username'] = $username;
         }
