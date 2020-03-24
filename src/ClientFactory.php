@@ -120,7 +120,7 @@ final class ClientFactory
             ];
             if ($query) {
                 $params += $query;
-                $options = $query + $options;
+                $config = $query + $config;
             }
 
             $servers[] = ['host' => $params['host'], 'port' => $params['port']];
