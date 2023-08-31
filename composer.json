@@ -1,6 +1,6 @@
 {
     "name": "happyr/elastica-dsn",
-    "description": "DSN support to ruflin/Elastica",
+    "description": "DSN (data source name) support to ruflin/Elastica",
     "type": "library",
     "license": "MIT",
     "authors": [

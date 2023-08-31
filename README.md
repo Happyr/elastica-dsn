@@ -8,7 +8,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/happyr/elastica-dsn.svg?style=flat-square)](https://packagist.org/packages/happyr/elastica-dsn)
 
 This package contains a factory method to create a Elasticsearch client from [ruflin/elastica](https://github.com/ruflin/Elastica).
-The factory supports DSN to ease config with a dependency injection container. 
+The factory supports DSN (data source name) to ease config with a dependency injection container. 
 
 ## Install
 
